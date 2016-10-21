@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>对对碰</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="./css/swiper-3.3.1.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+	</head>
+	<body>
+		<div class="swiper-container" id='main'>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id='index'>
+					<div class="header">
+						<img src="./img/title.png" class="header_img">
+					</div>
+					<div class="body index_body">
+						<div class="index_text">
+							<p class="index_text_title">对对碰规则</p>
+							<p class="index_text_p">
+								参与者将在接下来做一个小型的心理测试，测出喜欢的电影类型。我们将根据测试结果将喜好相同的一对异性随机匹配到一起，参加者可在稍后于【华工百步梯】公众号查询到配对结果。配对成功后结伴来到11.5日雕刻盛典观影，就可以领取结缘证和精美的礼品，并可获得拍立得照片作为纪念
+							</p>
+						</div>
+						<button class="sign_up" id='sign_up'>我要报名</button>
+					</div>
+				</div>
+				<div class="swiper-slide" id='sign_up_page'>
+					<div class="body">
+						<div class="sign_up_title">
+							<p>报名信息填写</p>
+						</div>
+						<div class="data_list">
+							<input type="text" id="name" class="list_name list" placeholder="姓名">
+							<select class="list_sex list" id='sex'>
+								<option value="default">性别</option>
+								<option value="male" selected="selected">男</option>
+								<option value="female">女</option>
+							</select>
+							<select id="academy" class="list_academy list" >
+								<option value="default">学院（请选择）</option>
+								<option value="材料科学与工程学院" selected="selected">
+									C.材料科学与工程学院
+								</option>
+								<option value="电力学院">
+									D.电力学院
+								</option>
+								<option value="电子与信息学院">
+									D.电子与信息学院
+								</option>
+								<option value="法学院（知识产权学院）">
+									F.法学院（知识产权学院）
+								</option>
+								<option value="公共管理学院">
+									G.公共管理学院
+								</option>
+								<option value="国际教育学院">
+									G.国际教育学院
+								</option>
+								<option value="工商管理学院（创业教育学院）">
+									G.工商管理学院（创业教育学院）
+								</option>
+								<option value="环境与能源学院">
+									H.环境与能源学院
+								</option>
+								<option value="化学与化工学院">
+									H.化学与化工学院
+								</option>
+								<option value="经济与贸易学院">
+									J.经济与贸易学院
+								</option>
+								<option value="计算机科学与工程学院">
+									J.计算机科学与工程学院
+								</option>
+								<option value="机械与汽车工程学院">
+									J.机械与汽车工程学院
+								</option>
+								<option value="建筑学院">
+									J.建筑学院
+								</option>
+								<option value="轻工科学与工程学院">
+									Q.轻工科学与工程学院
+								</option>
+								<option value="软件学院">
+									R.软件学院
+								</option>
+								<option value="设计学院">
+									S.设计学院
+								</option>
+								<option value="生物科学与工程学院">
+									S.生物科学与工程学院
+								</option>
+								<option value="食品科学与工程学院">
+									S.食品科学与工程学院
+								</option>
+								<option value="思想政治学院">
+									S.思想政治学院
+								</option>
+								<option value="数学学院">
+									S.数学学院
+								</option>
+								<option value="土木与交通学院">
+									T.土木与交通学院
+								</option>
+								<option value="体育学院">
+									T.体育学院
+								</option>
+								<option value="外国语学院">
+									W.外国语学院
+								</option>
+								<option value="物理与光电学院">
+									W.物理与光电学院
+								</option>
+								<option value="新闻与传播学院">
+									X.新闻与传播学院
+								</option>
+								<option value="艺术学院">
+									Y.艺术学院
+								</option>
+								<option value="医学院">
+									Y.医学院
+								</option>
+								<option value="自动化科学与工程学院">
+									Z.自动化科学与工程学院
+								</option>
+							</select>
+							<select id="grade" class="list_grade list">
+								<option id="gradeDefault" value="default">年级（请选择）</option>
+								<option value="大一" selected="selected">大一</option>
+								<option value="大二">大二</option>
+								<option value="大三">大三</option>
+								<option value="大四">大四</option>
+								<option value="研究生">研究生</option>
+							</select>
+							<input type="text" id='phone' class="list_phone list" placeholder="手机">
+							<input type="text" id="wechat_id" class="list_wechat_id list" placeholder="微信号（选填）">
+						</div>
+						<button class="test_begin_button" id="test_begin">开始测试</button>
+					</div>
+				</div>
+				<div class="swiper-slide" id='question'>
+					<div class="body">
+						<div class="question_title">
+							<p class="question_title_text" id='title'>你最想遇见下列事物的哪一个</p>
+						</div>
+						<div class="question_option_list">
+							<div class="question_option">
+								<div class="round" id="chose_1"></div>
+								<div class="option_text">
+									<p id="option_1">流星雨</p>
+								</div>
+							</div>
+							<div class="question_option">
+								<div class="round" id="chose_2"></div>
+								<div class="option_text">
+									<p id="option_2">不明飞行物</p>
+								</div>
+							</div>
+							<div class="question_option">
+								<div class="round" id="chose_3"></div>
+								<div class="option_text">
+									<p id="option_3">红色月亮</p>
+								</div>
+							</div>
+							<div class="question_option">
+								<div class="round" id="chose_4"></div>
+								<div class="option_text">
+									<p id="option_4">太阳公公</p>
+								</div>
+							</div>
+						</div>
+						<button class="last_button" id="last">上一题</button>
+						<button class="next_button" id="next">下一题</button>
+					</div>
+				</div>
+				<div class="swiper-slide" id='question_img'>
+					<div class="body">
+						<div class="question_title">
+							<p class="question_title_text" id='title_img'>以下图片你更喜欢哪个</p>
+						</div>
+						<div class="question_option_list">
+							<div class="question_option_img ">
+								<div class="round round_img" id="chose_img_1"></div>
+								<div class="question_img_box">
+									<img class="question_img" src="./img/1.jpg">
+								</div>
+							</div>
+							<div class="question_option_img ">
+								<div class="round round_img" id="chose_img_2"></div>
+								<div class="question_img_box">
+									<img class="question_img" src="./img/2.jpg">
+								</div>
+							</div>
+							<div class="question_option_img ">
+								<div class="round round_img" id="chose_img_3"></div>
+								<div class="question_img_box">
+									<img class="question_img" src="./img/3.jpg">
+								</div>
+							</div>
+							<div class="question_option_img ">
+								<div class="round round_img" id="chose_img_4"></div>
+								<div class="question_img_box">
+									<img class="question_img" src="./img/4.jpg">
+								</div>
+							</div>
+						</div>
+						<button class="last_button" id="last_img">上一题</button>
+						<button class="next_button" id="next_img">提交</button>
+					</div>
+				</div>
+				<div class="swiper-slide" id="last">
+					<div class="logo">
+						<img class="logo_img" src="./img/logo.png">
+					</div>
+					<div class="last_text">
+						<p class="text_1 text">投票成功</p>
+						<p class="text">恭喜获得一枚印花</p>
+						<p class="text_1 text_blue text" id="lottery_code" >抽奖码：12345678</p>
+					<div class="text_4 text">
+							<p class="text_3">请</p>
+							<p class="text_blue text_3">截图</p>
+							<p class="text_3">保存</p>
+					</div>
+						<p class="text_1 text">请于10月26~28日至</p>
+						<p class="text text_2">一饭或二饭雕刻时光</p>
+						<p class="text">摆摊处凭抽奖码抽奖一次</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/zepto.min.js"></script>
+		<script type="text/javascript" src="./js/swiper-3.3.1.jquery.min.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
+	</body>
+</html>
