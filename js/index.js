@@ -293,32 +293,33 @@
 					d++;
 					break;
 			}
-		alert("name: " + data[0] + "\nsex: " + data[1] + "\nacademy: " + data[2] + "\ngrade " + data[3] + "\nphone: " + data[4]);
-		alert("文艺爱情: " + a + "\n科幻动作: " + b + "\n恐怖悬疑: " + c + "\n动画喜剧: " + d);
-		// $.ajax({
-		// 	type: 'POST',
-		// 	url: 'http://test.shabby-wjt.cn:8000/BBT_duiduipen/interface.php',
-		// 	data: {
-		// 		//0:name 1:sex 2:academy 3:grade 4:phone 5:wid
-		// 		name: data[0],
-		// 		sex: data[1],
-		// 		academy: data[2],
-		// 		grade: data[3],
-		// 		phone: data[4],
-		// 		wechat: data[5],
-		// 		insert: 1,
-		// 		mark: {
-		// 			"文艺爱情": a,
-		// 			"科幻动作": b,
-		// 			"恐怖悬疑": c,
-		// 			"动画喜剧": d
-		// 		}
-		// 	}
+			// alert("name: " + data[0] + "\nsex: " + data[1] + "\nacademy: " + data[2] + "\ngrade " + data[3] + "\nphone: " + data[4]);
+			// alert("文艺爱情: " + a + "\n科幻动作: " + b + "\n恐怖悬疑: " + c + "\n动画喜剧: " + d);
+		$.ajax({
+			type: 'POST',
+			url: //'http://test.shabby-wjt.cn:8000/BBT_duiduipen/interface.php',
+				"../php/test.php",
+			data: {
+				//0:name 1:sex 2:academy 3:grade 4:phone 5:wid
+				name: data[0],
+				sex: data[1],
+				academy: data[2],
+				grade: data[3],
+				phone: data[4],
+				wechat: data[5],
+				insert: 1,
+				mark: {
+					"文艺爱情": a,
+					"科幻动作": b,
+					"恐怖悬疑": c,
+					"动画喜剧": d
+				}
+			}
 
-		// 	,
-		// 	dataType: 'json',
-		// 	success: function() {
-		// 		alert(status);
-		// 	}
-		// })
+			,
+			dataType: 'json',
+			success: function() {
+				alert(status);
+			}
+		})
 	}
