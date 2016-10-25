@@ -1,0 +1,118 @@
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated_fast {
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes show {
+from{
+	background-color: #262626;
+}
+to{
+	background-color: #6c45c1;
+}
+}
+
+@keyframes show {
+ from{
+	background-color: transparent;
+}
+to{
+	background-color: #6c45c1;
+}
+}
+
+@-webkit-keyframes hide {
+from{
+	background-color: #6c45c1;
+}
+to{
+	background-color: transparent;
+}
+}
+
+@keyframes hide {
+from{
+	background-color: #6c45c1;
+}
+to{
+	background-color: transparent;
+}
+}
+
+
+
+
+.show {
+  -webkit-animation-name: show;
+  animation-name: show;
+}
+
+.hide {
+  -webkit-animation-name: hide;
+  animation-name: hide;
+}
+
+.animated-infinite {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
