@@ -116,8 +116,8 @@
 
 		var height = document.body.clientHeight;
 		var width = document.body.clientWidth;
-		$(".swiper-slide").css("-moz-background-size", width + " " + height);
-		$(".swiper-slide").css("background-size", width + " " + height);
+		$(".swiper-slide").css("-moz-background-size", width + "px " + height + "px");
+		$(".swiper-slide").css("background-size", width + "px " + height + "px");
 		var rem = width / 7.5;
 		$('html').css('font-size', rem);
 		swiper.lockSwipes();
